@@ -1,20 +1,16 @@
-def add( first, second):
-    # TODO:
-    # there's an error in this code, fix it
-    return first plus second
+#Juan Marcos Mendez
 
-def subtract( first, second):
-    # TODO:
-    # fill in code here that will return the difference between first and second
+def add(first, second): 
+    return first + second # Just changed your plus to +
 
-def multiply( first, second):
-    # TODO:
-    # fill in code here that will return the product of first and second
+def subtract(first, second):
+    return first - second # saying hey subtract the first number by the scond
 
-def divide( first, second):
-    # TODO:
-    # fill in code here that:
-    #   1. checks the second number to see if it is zero
-    #   2. if the second number is zero, an exception is raised, the exception text must say exactly the following (make sure everything including casing and spaces match)
-    #       I'm sorry, I can't divide by zero
-    #   3. returns the quotient of first and second
+def multiply(first, second):
+    return first * second # Saying mulitply the first and second numbers
+
+def divide(first, second):
+    try:                        # Saying try this
+        return first / second   # Trying this
+    except Exception as error:  # Saying if the above dont work do this
+        print('I\'m sorry, I can\'t divide by zero')  #error message if failed
